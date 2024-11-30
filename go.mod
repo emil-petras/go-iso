@@ -1,3 +1,3 @@
-module go-iso
+module github.com/emil-petras/go-iso
 
-go 1.23.1
+go 1.21
