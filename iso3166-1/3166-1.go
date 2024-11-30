@@ -1,8 +1,8 @@
 package iso31661
 
-import "go-iso/types"
+import goiso "github.com/emil-petras/go-iso"
 
-var Countries = []types.Country{
+var Countries = []goiso.Country{
 	{"Afghanistan", "AF", "AFG", "004"},
 	{"Åland Islands", "AX", "ALA", "248"},
 	{"Albania", "AL", "ALB", "008"},

@@ -1,4 +1,4 @@
-package types
+package goiso
 
 type Country struct {
 	Name    string
