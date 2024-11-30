@@ -13,7 +13,7 @@ The `go-iso` package is a Go library that provides ISO 3166-1 country codes and 
 To install the package, run:
 
 ```bash
-go get github.com/yourusername/go-iso
+go get github.com/emil-petras/go-iso
 ```
 
 ## Usage
@@ -24,8 +24,7 @@ First, import the package into your Go project:
 import (
     "fmt"
 
-    goiso "github.com/emil-petras/go-iso"
-    "github.com/emil-petras/go-iso/types"
+    iso31661 "github.com/emil-petras/go-iso/iso3166-1"
 )
 ```
 
@@ -77,7 +76,7 @@ if country != nil {
 
 ## Data Structure
 
-The `Country` type is defined in the `types` package and has the following structure:
+The `Country` type is defined in the `go-iso` (root) package and has the following structure:
 
 ```go
 type Country struct {
