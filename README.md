@@ -1,7 +1,6 @@
-```markdown
-# iso31661
+# go-iso
 
-The `iso31661` package is a Go library that provides ISO 3166-1 country codes and associated data. It allows you to retrieve country information by name, alpha-2 code, alpha-3 code, or numeric code.
+The `go-iso` package is a Go library that provides ISO 3166-1 country codes and associated data. It allows you to retrieve country information by name, alpha-2 code, alpha-3 code, or numeric code.
 
 ## Features
 
@@ -25,8 +24,8 @@ First, import the package into your Go project:
 import (
     "fmt"
 
-    "github.com/yourusername/iso31661"
-    "github.com/yourusername/iso31661/types"
+    goiso "github.com/emil-petras/go-iso"
+    "github.com/emil-petras/go-iso/types"
 )
 ```
 
@@ -35,7 +34,7 @@ import (
 #### Get Country by Name
 
 ```go
-country := iso31661.GetByName("Japan")
+country := goiso.GetByName("Japan")
 if country != nil {
     fmt.Printf("Country: %s, Alpha-2 Code: %s\n", country.Name, country.Alpha2)
 } else {
@@ -46,7 +45,7 @@ if country != nil {
 #### Get Country by Alpha-2 Code
 
 ```go
-country := iso31661.GetByAlpha2("JP")
+country := goiso.GetByAlpha2("JP")
 if country != nil {
     fmt.Printf("Country: %s, Numeric Code: %s\n", country.Name, country.Numeric)
 } else {
@@ -57,7 +56,7 @@ if country != nil {
 #### Get Country by Alpha-3 Code
 
 ```go
-country := iso31661.GetByAlpha3("JPN")
+country := goiso.GetByAlpha3("JPN")
 if country != nil {
     fmt.Printf("Country: %s, Alpha-2 Code: %s\n", country.Name, country.Alpha2)
 } else {
@@ -68,7 +67,7 @@ if country != nil {
 #### Get Country by Numeric Code
 
 ```go
-country := iso31661.GetByNumeric("392")
+country := goiso.GetByNumeric("392")
 if country != nil {
     fmt.Printf("Country: %s, Alpha-3 Code: %s\n", country.Name, country.Alpha3)
 } else {
@@ -108,10 +107,6 @@ Contributions are welcome! Please follow these steps:
 2. Create a new branch for your feature or bug fix.
 3. Commit your changes with clear messages.
 4. Submit a pull request.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Disclaimer
 
